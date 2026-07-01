@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
+  "version": "v1.7",
+  "name": "CI Agent",
+  "description": "A strategy and enablement assistant that keeps the organisation current on its market.",
+  "instructions": "$[file('instruction.txt')]",
+  "capabilities": [
+    { "name": "WebSearch" },
+    { "name": "OneDriveAndSharePoint" },
+    { "name": "CodeInterpreter" }
+  ],
+  "conversation_starters": [
+    { "title": "Update Battlecard", "text": "Refresh our battlecard for Competitor X using the latest web intelligence." },
+    { "title": "Win/Loss Analysis", "text": "What patterns do our loss notes show for Competitor Y, and what plays should we run?" },
+    { "title": "Market Memo", "text": "Write a strategic memo on the competitor's recent product launch." }
+  ]
+}
