@@ -1,0 +1,38 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.27/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.27",
+    "version": "1.0.0",
+    "id": "380b67fb-de9c-4d15-a30c-e835fd4ac4a0",
+    "developer": {
+        "name": "Netsmartz",
+        "websiteUrl": "https://www.netsmartz.com",
+        "privacyUrl": "https://www.netsmartz.com/privacy-policy/",
+        "termsOfUseUrl": "https://www.netsmartz.com/terms/agent-marketplace/"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "CI Agent",
+        "full": "Competitive Intelligence Agent"
+    },
+    "description": {
+        "short": "Competitive intelligence assistant for market insights",
+        "full": "Competitive Intelligence Agent helps teams analyze competitors, track market trends, generate battlecards, perform win/loss analysis, and benchmark pricing using internal and public data sources within Microsoft 365."
+    },
+    "accentColor": "#E97424",
+    "copilotAgents": {
+        "declarativeAgents": [
+            {
+                "id": "ciAgent",
+                "file": "declarativeAgent.json"
+            }
+        ]
+    },
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}

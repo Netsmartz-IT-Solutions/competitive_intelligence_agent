@@ -1,37 +1,38 @@
 {
-    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.27/MicrosoftTeams.schema.json",
-    "manifestVersion": "1.27",
-    "version": "1.0.0",
-    "id": "a5f728c2-5555-46f9-8d14-3c6ab5576aa5",
-    "developer": {
-        "name": "Enterprise AI Team",
-        "websiteUrl": "https://www.example.com",
-        "privacyUrl": "https://www.example.com/privacy",
-        "termsOfUseUrl": "https://www.example.com/terms"
-    },
-    "icons": {
-        "color": "color.png",
-        "outline": "outline.png"
-    },
-    "name": {
-        "short": "CI Agent",
-        "full": "Competitive Intelligence Agent"
-    },
-    "description": {
-       "short": "Market insights assistant",
-       "full": "Market insights assistant"
-    },
-    "accentColor": "#005A9E",
-    "copilotAgents": {
-        "declarativeAgents": [
-            {
-                "id": "declarativeAgent",
-                "file": "declarativeAgent.json"
-            }
-        ]
-    },
-    "permissions": [
-        "identity"
-    ],
-    "validDomains": []
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.27/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.27",
+  "version": "1.0.0",
+"id": "${{TEAMS_APP_ID}}",
+  "developer": {
+    "name": "Netsmartz",
+    "websiteUrl": "https://www.netsmartz.com",
+    "privacyUrl": "https://www.netsmartz.com/privacy-policy/",
+    "termsOfUseUrl": "https://www.netsmartz.com/terms/agent-marketplace/"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "CI Agent",
+    "full": "Competitive Intelligence Agent"
+  },
+  "description": {
+    "short": "Competitive intelligence assistant for market insights",
+    "full": "Competitive Intelligence Agent helps teams analyze competitors, track market trends, generate battlecards, perform win/loss analysis, and benchmark pricing using internal and public data sources within Microsoft 365."
+  },
+  "accentColor": "#E97424",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "ciAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": []
 }
